@@ -339,7 +339,7 @@ python challenge_2_object_detection_mission.py
 | | |
 |---|---|
 | ![Maze arena](docs/images/06-maze-arena-wide.jpeg) | ![Maze arena, corner view](docs/images/07-maze-arena-corner.jpeg) |
-| ![Drone Challenge booth](docs/images/08-drone-challenge-booth.jpg) | ![Drone Challenge sign](docs/images/09-drone-challenge-logo.jpg) |
+| ![Drone Challenge booth](docs/images/08-drone-challenge-booth.jpeg) | ![Drone Challenge sign](docs/images/09-drone-challenge-logo.jpg) |
 | ![Awards stage](docs/images/02-awards-stage.jpeg) | ![Team photo](docs/images/03-team-photo.jpeg) |
 
 ## Repository structure

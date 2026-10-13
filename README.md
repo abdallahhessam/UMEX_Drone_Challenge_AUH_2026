@@ -324,8 +324,8 @@ python challenge_2_object_detection_mission.py
 
 | | |
 |---|---|
-| ![Workshop room](docs/images/10-workshop-room-1.jpg) | ![Workshop room, second view](docs/images/11-workshop-room-2.jpg) |
-| ![Reviewing code with a participant](docs/images/04-debugging-session.jpg) | ![Walking through the maze](docs/images/05-maze-walkthrough.jpg) |
+| ![Workshop room](docs/images/10-workshop-room-1.jpeg) | ![Workshop room, second view](docs/images/11-workshop-room-2.jpeg) |
+| ![Reviewing code with a participant](docs/images/04-debugging-session.jpg) | ![Walking through the maze](docs/images/05-maze-walkthrough.jpeg) |
 
 **Live demonstrations** (faces of participants and spectators are blurred)
 
@@ -338,9 +338,9 @@ python challenge_2_object_detection_mission.py
 
 | | |
 |---|---|
-| ![Maze arena](docs/images/06-maze-arena-wide.jpg) | ![Maze arena, corner view](docs/images/07-maze-arena-corner.jpg) |
+| ![Maze arena](docs/images/06-maze-arena-wide.jpeg) | ![Maze arena, corner view](docs/images/07-maze-arena-corner.jpeg) |
 | ![Drone Challenge booth](docs/images/08-drone-challenge-booth.jpg) | ![Drone Challenge sign](docs/images/09-drone-challenge-logo.jpg) |
-| ![Awards stage](docs/images/02-awards-stage.jpg) | ![Team photo](docs/images/03-team-photo.jpg) |
+| ![Awards stage](docs/images/02-awards-stage.jpeg) | ![Team photo](docs/images/03-team-photo.jpeg) |
 
 ## Repository structure
 

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" width="1000" height="580" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker>
+    <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#16a34a"/></marker>
+    <marker id="ap" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#7c3aed"/></marker>
+    <marker id="ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#111"/></marker>
+  </defs>
+  <rect width="1000" height="580" fill="#ffffff"/>
+  <text x="20" y="30" font-size="20" font-weight="bold" fill="#111">Hula drone mission system: system diagram</text>
+  <line x1="20" y1="48" x2="60" y2="48" stroke="#2563eb" stroke-width="3"/><text x="68" y="52" font-size="12" fill="#111">Flight commands</text>
+  <line x1="190" y1="48" x2="230" y2="48" stroke="#16a34a" stroke-width="3"/><text x="238" y="52" font-size="12" fill="#111">Sensor data</text>
+  <line x1="350" y1="48" x2="390" y2="48" stroke="#7c3aed" stroke-width="3" stroke-dasharray="6 4"/><text x="398" y="52" font-size="12" fill="#111">Video stream</text>
+  <line x1="500" y1="48" x2="540" y2="48" stroke="#111" stroke-width="4"/><text x="548" y="52" font-size="12" fill="#111">Physical flight</text>
+
+  <!-- laptop -->
+  <rect x="20" y="70" width="340" height="320" rx="10" fill="#eff6ff" stroke="#111" stroke-width="2"/>
+  <text x="190" y="92" font-size="14" font-weight="bold" text-anchor="middle" fill="#111">Laptop (Python)</text>
+  <g stroke="#111" stroke-width="1.5" fill="#ffffff">
+    <rect x="35" y="104" width="310" height="46" rx="6"/>
+    <rect x="35" y="158" width="310" height="46" rx="6"/>
+    <rect x="35" y="212" width="310" height="46" rx="6"/>
+    <rect x="35" y="266" width="310" height="46" rx="6"/>
+    <rect x="35" y="320" width="150" height="56" rx="6" fill="#fef3c7"/>
+    <rect x="195" y="320" width="150" height="56" rx="6" fill="#fef3c7"/>
+  </g>
+  <g font-size="12" fill="#111" text-anchor="middle">
+    <text x="190" y="124" font-weight="bold">challenge_1_maze_navigation.py</text><text x="190" y="141" font-size="11">DFS discovery, A* race, pyhula SDK</text>
+    <text x="190" y="178" font-weight="bold">challenge_2_object_detection_mission.py</text><text x="190" y="195" font-size="11">Tkinter GUI, A* to targets, snapshots</text>
+    <text x="190" y="232" font-weight="bold">hula_video.py</text><text x="190" y="249" font-size="11">Decodes the RTP / H.264 stream with ffmpeg</text>
+    <text x="190" y="286" font-weight="bold">onnxdetector.py</text><text x="190" y="303" font-size="11">ONNX Runtime, YOLO11s: House, Tank, Tree</text>
+    <text x="110" y="344" font-weight="bold">maze.json</text><text x="110" y="362" font-size="11">Discovered maze map</text>
+    <text x="270" y="344" font-weight="bold">snapshots/</text><text x="270" y="362" font-size="11">Detection frames</text>
+  </g>
+
+  <!-- drone -->
+  <rect x="640" y="70" width="340" height="320" rx="10" fill="#dbeafe" stroke="#111" stroke-width="2"/>
+  <text x="810" y="92" font-size="14" font-weight="bold" text-anchor="middle" fill="#111">Hula drone</text>
+  <g stroke="#111" stroke-width="1.5" fill="#ffffff">
+    <rect x="655" y="104" width="310" height="58" rx="6"/>
+    <rect x="655" y="172" width="310" height="58" rx="6"/>
+    <rect x="655" y="240" width="310" height="58" rx="6"/>
+    <rect x="655" y="308" width="310" height="68" rx="6"/>
+  </g>
+  <g font-size="12" fill="#111" text-anchor="middle">
+    <text x="810" y="128" font-weight="bold">Proximity sensors</text><text x="810" y="146" font-size="11">Wall detection: front, back, left, right</text>
+    <text x="810" y="196" font-weight="bold">IMU</text><text x="810" y="214" font-size="11">Attitude and stabilization in the flight controller</text>
+    <text x="810" y="264" font-weight="bold">QR positioning</text><text x="810" y="282" font-size="11">Reads QR tags on the floor, gives x and y</text>
+    <text x="810" y="332" font-weight="bold">Camera</text><text x="810" y="350" font-size="11">Video of the wall pictures</text>
+    <text x="810" y="366" font-size="11">1080p camera, streamed to the laptop</text>
+  </g>
+
+  <!-- arrows -->
+  <g fill="none" stroke-width="3">
+    <line x1="362" y1="130" x2="638" y2="130" stroke="#2563eb" marker-end="url(#ab)"/>
+    <line x1="638" y1="200" x2="364" y2="200" stroke="#16a34a" marker-end="url(#ag)"/>
+    <line x1="638" y1="270" x2="364" y2="270" stroke="#7c3aed" stroke-dasharray="6 4" marker-end="url(#ap)"/>
+  </g>
+  <g font-size="11" text-anchor="middle">
+    <text x="500" y="122" fill="#2563eb">Takeoff, move, turn, land (pyhula)</text>
+    <text x="500" y="192" fill="#16a34a">Barriers and QR coordinates</text>
+    <text x="500" y="262" fill="#7c3aed">Camera video (RTP, H.264)</text>
+  </g>
+
+  <!-- arena -->
+  <rect x="260" y="450" width="480" height="110" rx="10" fill="#f3f4f6" stroke="#111" stroke-width="2"/>
+  <g font-size="13" fill="#111" text-anchor="middle">
+    <text x="500" y="478" font-weight="bold">Maze arena</text>
+    <text x="500" y="500">Walls on a grid, 60 cm cells</text>
+    <text x="500" y="520">QR code carpet on the floor</text>
+    <text x="500" y="540">Wall pictures: tree, house, tank</text>
+  </g>
+  <polyline points="810,392 810,500 742,500" fill="none" stroke="#111" stroke-width="4" marker-end="url(#ak)"/>
+  <text x="820" y="440" font-size="11" fill="#111">Flies the maze, senses walls,</text>
+  <text x="820" y="455" font-size="11" fill="#111">reads QR tags, films pictures</text>
+</svg>

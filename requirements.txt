@@ -1,0 +1,9 @@
+# Offline tools (ONNX detector test, maze solver simulation)
+numpy
+opencv-python
+onnxruntime
+matplotlib
+
+# Needed only to fly a drone. The pyhula SDK and ffmpeg-lib.dll come with the
+# Hula drone workshop environment and are not part of this repository.
+# pyhula
